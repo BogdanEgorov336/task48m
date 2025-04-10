@@ -2,4 +2,4 @@
 #include <iostream>
 using namespace std;
 
-int get_max_sum_odd_line_index(int**, int, int);
+int get_the_greatest_sum_on_line_index(int**, int, int);

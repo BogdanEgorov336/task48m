@@ -20,10 +20,12 @@ int main() {
 
 	cout << "Matrix:\n" << convert_to_string(matrix, n, m);
 
-	cout << "Line features the greatest absolute-value sum: "
-		<< (get_the_greatest_sum_on_line_index(matrix, n, m) != -1
-			? to_string(get_the_greatest_sum_on_line_index(matrix, n, m))
-			: "there is no such ones.") << endl;
+	int number;
+	cout << "Enter the number: ";
+	cin >> number;
+
+	cout << "The lowest multiplication-column index: "
+		<< find_the_lowest_mult_index(matrix, n, m, number) << endl;
 
 	for (int i = 0; i < n; i++) {
 		delete[] matrix[i];
